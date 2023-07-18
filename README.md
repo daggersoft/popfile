@@ -10,6 +10,7 @@ https://github.com/krisnelson/Docker-POPFile
 
 ## Example Docker Containers
 (persist data is docker volume, interface at port 7070, POP not exposed)
+
 docker run -d \
   -p 7070:8080 \
   -v /etc/localtime:/etc/localtime:ro \
@@ -18,6 +19,7 @@ docker run -d \
   popfile
 
 (persist data on local filesystem)
+
 docker run -d \
    --restart unless-stopped \
    -p 8080:8080 \
