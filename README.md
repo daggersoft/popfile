@@ -20,10 +20,9 @@ docker run -d \
 (persist data on local filesystem)
 docker run -d \
    --restart unless-stopped \
-   -p 8085:8080 \
+   -p 8080:8080 \
    -p 110:110 \ 
    -v /etc/localtime:/etc/localtime:ro \
    --mount type=bind,source=C:/ProgramData/POPFile,target=/Data \
    --name "popfile" \
    popfile
-##-------------------------------------------------------------------------------------------------------------------
