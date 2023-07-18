@@ -28,3 +28,14 @@ docker run -d \
    --mount type=bind,source=C:/ProgramData/POPFile,target=/Data \
    --name "popfile" \
    popfile
+
+## Image available on DockerHub
+
+docker run -d \
+   --restart unless-stopped \
+   -p 8080:8080 \
+   -p 110:110 \ 
+   -v /etc/localtime:/etc/localtime:ro \
+   --mount type=bind,source=C:/ProgramData/POPFile,target=/Data \
+   --name "popfile" \
+   ncollett/popfile:latest
