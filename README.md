@@ -38,4 +38,4 @@ docker run -d \
    -v /etc/localtime:/etc/localtime:ro \
    --mount type=bind,source=C:/ProgramData/POPFile,target=/data \
    --name "popfile" \
-   ncollett/popfile:latest
+   daggersoft/popfile:latest
