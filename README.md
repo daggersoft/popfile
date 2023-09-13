@@ -25,7 +25,7 @@ docker run -d \
    -p 8080:8080 \
    -p 110:110 \ 
    -v /etc/localtime:/etc/localtime:ro \
-   --mount type=bind,source=C:/ProgramData/POPFile,target=/Data \
+   --mount type=bind,source=C:/ProgramData/POPFile,target=/data \
    --name "popfile" \
    popfile
 
@@ -36,6 +36,6 @@ docker run -d \
    -p 8080:8080 \
    -p 110:110 \ 
    -v /etc/localtime:/etc/localtime:ro \
-   --mount type=bind,source=C:/ProgramData/POPFile,target=/Data \
+   --mount type=bind,source=C:/ProgramData/POPFile,target=/data \
    --name "popfile" \
    ncollett/popfile:latest
